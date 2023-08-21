@@ -11,7 +11,6 @@
 
     <form action="{{route('familias.update',$familia->id)}}" method="post">
         @csrf
-        @method('PUT')
         <label for="nombre">Nombre de la familia</label>
         <input type="text" name="nombre" id="nombre" value="{{$familia->nombre}}">
         <br>
@@ -22,3 +21,4 @@
     </form>
 </body>
 </html>
+

@@ -25,10 +25,12 @@ Route::get('/familias', [FamiliaController::class, 'index'])->name('familias.ind
 Route::get('/familias/create', [FamiliaController::class, 'create'])->name('familias.create');
 Route::post('/familias/store', [FamiliaController::class, 'store'])->name('familias.store');
 Route::get('/familias/edit/{id}', [FamiliaController::class, 'edit'])->name('familias.edit');
-Route::put('/familias/update/{id}', [FamiliaController::class, 'update'])->name('familias.update');
+Route::post('/familias/update/{id}', [FamiliaController::class, 'update'])->name('familias.update');
 
 Route::get('/marcas', [MarcaController::class, 'index'])->name('marcas.index');
 Route::get('/marcas/create', [MarcaController::class, 'create'])->name('marcas.create');
 Route::post('/marcas/store', [MarcaController::class, 'store'])->name('marcas.store');
 
 Route::get('/welcome', [WelcomeController::class, 'index'])->name('welcome.index');
+
+
